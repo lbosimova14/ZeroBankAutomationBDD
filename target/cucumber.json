@@ -1,0 +1,707 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "open login page and login with valid credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 675614828,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 387317612,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click signin button",
+            "match": {
+              "location": "LoginStepDefinitions.click_signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 735722420,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-29T23:44:13.773Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4857782931,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Savings account redirect",
+        "description": "",
+        "id": ";savings-account-redirect",
+        "after": [
+          {
+            "result": {
+              "duration": 657253922,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 326861893,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks on \"Savings\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10081769,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that \"Zero - Account Activity\" page should  be diplayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_page_should_be_diplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 181374139,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Account drop down should have \"Savings\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_selected(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivityNavigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open login page and login with valid credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 562445143,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 495909490,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click signin button",
+            "match": {
+              "location": "LoginStepDefinitions.click_signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 780479514,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-29T23:44:21.681Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3379800007,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Brokerage account redirect",
+        "description": "",
+        "id": ";brokerage-account-redirect",
+        "after": [
+          {
+            "result": {
+              "duration": 780329671,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 345719128,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16904760,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user verifies that \"Zero - Account Activity\" page should  be diplayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_page_should_be_diplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 322711035,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Account drop down should have \"Brokerage\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_selected(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivityNavigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open login page and login with valid credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 572631187,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 339247549,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click signin button",
+            "match": {
+              "location": "LoginStepDefinitions.click_signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 685428933,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-29T23:44:28.375Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3404161614,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Checking account redirect",
+        "description": "",
+        "id": ";checking-account-redirect",
+        "after": [
+          {
+            "result": {
+              "duration": 660959356,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 304427308,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user clicks on \"Checking\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8981141,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user verifies that \"Zero - Account Activity\" page should  be diplayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_page_should_be_diplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 182502683,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Account drop down should have \"Checking\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_selected(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivityNavigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open login page and login with valid credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 623183307,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 281220930,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click signin button",
+            "match": {
+              "location": "LoginStepDefinitions.click_signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 676513066,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-29T23:44:34.542Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3340835476,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Credit Card account redirect",
+        "description": "",
+        "id": ";credit-card-account-redirect",
+        "after": [
+          {
+            "result": {
+              "duration": 664370442,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 384732512,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user clicks on \"Credit Card\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11811738,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user verifies that \"Zero - Account Activity\" page should  be diplayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_page_should_be_diplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 230595735,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Account drop down should have \"Credit Card\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_selected(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivityNavigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open login page and login with valid credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 662088721,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 398166249,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click signin button",
+            "match": {
+              "location": "LoginStepDefinitions.click_signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 796768481,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-29T23:44:40.764Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3342136442,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Loan account redirect",
+        "description": "",
+        "id": ";loan-account-redirect",
+        "after": [
+          {
+            "result": {
+              "duration": 665751461,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 430961762,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the user clicks on \"Loan\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8847719,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user verifies that \"Zero - Account Activity\" page should  be diplayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_page_should_be_diplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 214979215,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Account drop down should have \"Loan\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_selected(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivityNavigation"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "  Navigating to specific accounts in Accounts Activity",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/resourses/features/AccountActivityNavigation.feature",
+    "tags": [
+      {
+        "name": "@AccountActivityNavigation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
