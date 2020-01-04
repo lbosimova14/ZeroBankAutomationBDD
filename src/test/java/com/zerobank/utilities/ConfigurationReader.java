@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 //ConfigurationReader class which reads file from the properties file.
 public class ConfigurationReader {
+
     private static Properties configFile;
 
     static {
@@ -19,6 +20,7 @@ public class ConfigurationReader {
         }
         }
         public  static  String getProperty(String key){
+
         return  configFile.getProperty(key);
         }
     }

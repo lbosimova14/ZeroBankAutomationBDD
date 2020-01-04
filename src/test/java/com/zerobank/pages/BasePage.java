@@ -19,7 +19,8 @@ public class BasePage {
      * then based on these value, locator will be created
      * <li id="account_summary_tab" class="active">
      *     <a href="/bank/redirect.html?url=account-summary.html">Account Summary</a></li>
-     * @param moduleName
+     *   //tagName[contains(text(),'part of the visible text')]
+     *  @param moduleName
      */
     public void navigateTo(String moduleName) {
         String moduleLocator="//a[contains(text(),'"+moduleName+"')]";

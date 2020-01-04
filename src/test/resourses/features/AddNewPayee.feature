@@ -3,9 +3,9 @@ Feature:Add new payee under pay bills
   @addNewPayee
   Scenario:Add a new payee
     Given user is on home page
-    Then click signin button
+    And click signin button
     Then user is on login page
-    Then user navigates to "Pay Bills" module
+    And user navigates to "Pay Bills" module
     And click "Add New Payee" tab
     And creates new payee using following information
     |Payee Name   |The Law Offices of Hyde, Price & Scharks|

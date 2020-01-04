@@ -6,7 +6,7 @@ Feature: Login
   Scenario:When user logs in with valid credentials,Account summary page should be displayed.
     Given user is on home page
     Then click signin button
-    Then user is on login page
+    And user is on login page
     And user verifies that "Zero - Account Summary" page should  be diplayed
 
   @negative_test

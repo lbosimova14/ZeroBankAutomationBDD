@@ -5,14 +5,13 @@ Feature: Pay Bills
   Please fill out this field message!should be displayed.Amount field should not accept alphabetical or special characters. Date field should
   not accept alphabetical characters.
 
-
   Scenario: Pay Bills page should have the title Zero–Pay Bills
     Given user is on home page
     Then click signin button
     Then user is on login page
     Then user navigates to "Pay Bills" module
     Then user verifies that "Zero - Pay Bills" page should  be diplayed
-  @PayBills
+
     Scenario: Verify user completes a successful Pay operation
       Given user is on home page
       Then click signin button
@@ -35,3 +34,18 @@ Feature: Pay Bills
 #  User pay operation successfully submitted
 #  Actual message is: The payment was successfully submitted.
 #  Test completed!
+  @PayBills
+  Scenario:  When user tries to make a payment without entering the amount or date,
+  Please fill out this field message!should be displayed.
+    Given user is on home page
+    Then click signin button
+    Then user is on login page
+    Then user navigates to "Pay Bills" module
+     When user tries to make a payment without entering the amount
+       |Payee   |Apple         |
+       |Account |Savings       |
+       |Amount  |              |
+       |Date    |2019-12-31    |
+       |Description|Hello money|
+
+    Then Mandatory field error message should be displayed

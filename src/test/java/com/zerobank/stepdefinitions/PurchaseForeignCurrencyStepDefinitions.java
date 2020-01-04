@@ -6,6 +6,7 @@ import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
@@ -41,9 +42,9 @@ public class PurchaseForeignCurrencyStepDefinitions {
     @Then("error message should be displayed")
     public void error_message_should_be_displayed() {
         System.out.println("Error message is displayed:");
-       BrowserUtils.wait(2);
+        BrowserUtils.wait(2);
         Alert alert = Driver.get().switchTo().alert();
-        String ExpectedErrorMsg="Please, ensure that you have filled all the required fields with valid values.";
+        String ExpectedErrorMsg="Please fill out this field message!";
         Assert.assertEquals(alert.getText(),ExpectedErrorMsg);
         System.out.println(alert.getText());
 

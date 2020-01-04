@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resourses/features",
         glue = "com/zerobank/stepdefinitions",
-        dryRun = false,
-        tags = " @AccountActivityNavigation",
+        dryRun =false,
+        tags = "  @negative_test",
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/cucumber.json"}
 )

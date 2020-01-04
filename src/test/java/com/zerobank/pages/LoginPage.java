@@ -1,6 +1,5 @@
 package com.zerobank.pages;
 
-import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -32,6 +31,7 @@ public class LoginPage  extends BasePage {
 
 
     public LoginPage() {
+
         PageFactory.initElements(Driver.get(), this);
     }
 
@@ -50,6 +50,8 @@ public class LoginPage  extends BasePage {
         passwordElement.sendKeys(password, Keys.ENTER);
        // BrowserUtils.wait(3);
     }
+
+
 
 
 }

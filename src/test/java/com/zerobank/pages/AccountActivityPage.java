@@ -26,17 +26,11 @@ public class AccountActivityPage extends  BasePage {
     public List<String> getDropDownOptions() {
         Select select = new Select(selectAccountDropdown);
         List<WebElement> list = select.getOptions();
-//        //how to print every option, as text, one by one
-//        for (WebElement option : list) {
-//            System.out.println(option.getText());
-//        }
-
-//        Select select =new Select(DropDownOptions);
-//        List<WebElement> list =select.selectByVisibleText('Savings');
        return BrowserUtils.getListOfString(list);
     }
 
     public List<String> getTransactionsColumn() {
+
         return BrowserUtils.getListOfString(TransactionsColumnName);
     }
 

@@ -2,8 +2,10 @@ package com.zerobank.stepdefinitions;
 
 import com.zerobank.pages.PayBillsPage;
 import com.zerobank.utilities.BrowserUtils;
+import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import java.util.Map;
 
@@ -73,6 +75,29 @@ public class PayBillsStepDefinitions {//done
         System.out.println("Actual message is: "+payBillsPage.newPayeeSuccessMsg.getText());
     }
 
+    @When("user tries to make a payment without entering the amount")
+    public void user_tries_to_make_a_payment_without_entering_the_amount(Map<String,String> dataTable) {
+        System.out.println("User tried to make payment without enterin amount");
+        Select dropdownP = new Select(payBillsPage.payeeDropdown);
+        dropdownP.selectByVisibleText(dataTable.get("Payee"));
+        Select dropdownA = new Select(payBillsPage.accountDropdown);
+        dropdownA.selectByVisibleText(dataTable.get("Account"));
+        BrowserUtils.wait(2);
+        payBillsPage.amountElement.sendKeys(dataTable.get("Amount"));
+        BrowserUtils.wait(2);
+        payBillsPage.dateElement.sendKeys(dataTable.get("Date"));
+        payBillsPage.descriptionElement.sendKeys(dataTable.get("Description"));
+        BrowserUtils.wait(2);
+        payBillsPage.payButton.click();
+    }
+
+    @Then("Mandatory field error message should be displayed")
+    public void mandatory_field_error_message_should_be_displayed() {
+     //   String ErrorMessage= Driver.get().findElement(By.id("sp_amount")).getAttribute("validationMessage");
+        String ErrorMessage="Please fill out this field message!";
+        Assert.assertEquals(payBillsPage.amountElement.getAttribute("validationMessag"),ErrorMessage);
+        System.out.println("Error message is:  "+payBillsPage.amountElement.getAttribute("validationMessag"));
+    }
 
 
 
@@ -80,4 +105,8 @@ public class PayBillsStepDefinitions {//done
 
 
 
-}
+
+
+
+
+    }

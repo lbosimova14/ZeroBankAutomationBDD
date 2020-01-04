@@ -9,7 +9,7 @@ import org.junit.Assert;
 
 public class LoginStepDefinitions {
 
-  LoginPage loginPage=new LoginPage();
+  LoginPage loginPage = new LoginPage();
 
     @Given("user is on home page")
     public void user_is_on_home_page() {
