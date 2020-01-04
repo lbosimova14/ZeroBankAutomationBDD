@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resourses/features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resourses/features/PayBills.feature");
 formatter.feature({
-  "name": "Login",
-  "description": "  As user,I want to be able to login into zerobank\n  Only authorized users should be able to login to the application",
+  "name": "Pay Bills",
+  "description": "  Account Activity page should have the title Zero–Pay Bills. When user completes a successful Pay operation,\n  \"The payment was successfully submitted\"should be displayed. When user tries to make a payment without entering the amount or date,\n  Please fill out this field message!should be displayed.Amount field should not accept alphabetical or special characters. Date field should\n  not accept alphabetical characters.",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Users with wrong username should not be able to login.",
-  "description": "",
+  "name": "When user tries to make a payment without entering the amount or date,",
+  "description": "  Please fill out this field message!should be displayed.",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@negative_test"
+      "name": "@PayBills"
     }
   ]
 });
@@ -38,189 +38,73 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters \"wrongUsername\" username and \"password\" password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that \"Login and/or password are wrong.\" message is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_verifies_that_message_is_displayed(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Users with  wrong password should not be able to login.",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@negative_test"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click signin button",
+  "name": "user is on login page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.click_signin_button()"
+  "location": "LoginStepDefinitions.user_is_on_login_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters \"username\" username and \"WrongPassword\" password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that \"Login and/or password are wrong.\" message is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_verifies_that_message_is_displayed(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Users with blank username should not be able to login.",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@negative_test"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click signin button",
+  "name": "user navigates to \"Pay Bills\" module",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.click_signin_button()"
+  "location": "AccountActivityStepDefinitions.user_navigates_to_module(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters \"\" username and \"password\" password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that \"Login and/or password are wrong.\" message is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_verifies_that_message_is_displayed(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Users with blank password should not be able to login.",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
+  "name": "user tries to make a payment without entering the amount",
+  "rows": [
     {
-      "name": "@negative_test"
+      "cells": [
+        "Payee",
+        "Apple"
+      ]
+    },
+    {
+      "cells": [
+        "Account",
+        "Savings"
+      ]
+    },
+    {
+      "cells": [
+        "Amount",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "Date",
+        "2019-12-31"
+      ]
+    },
+    {
+      "cells": [
+        "Description",
+        "Hello money"
+      ]
     }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on home page",
-  "keyword": "Given "
+  ],
+  "keyword": "When "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_home_page()"
+  "location": "PayBillsStepDefinitions.user_tries_to_make_a_payment_without_entering_the_amount(String,String\u003e)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click signin button",
+  "name": "Mandatory field error message should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.click_signin_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters \"username\" username and \" \" password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that \"Login and/or password are wrong.\" message is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_verifies_that_message_is_displayed(String)"
+  "location": "PayBillsStepDefinitions.mandatory_field_error_message_should_be_displayed()"
 });
 formatter.result({
   "status": "passed"

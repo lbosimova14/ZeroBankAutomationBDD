@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resourses/features",
         glue = "com/zerobank/stepdefinitions",
         dryRun =false,
-        tags = "  @negative_test",
+        tags = "  @PayBills",
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/cucumber.json"}
 )
